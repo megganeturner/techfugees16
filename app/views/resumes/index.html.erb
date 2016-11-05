@@ -1,0 +1,11 @@
+<h1>All Resumes</h1>
+<ul>
+  <% @resumes.each do |resume| %>
+    <%= link_to(resume_path(resume.id)) do %>
+      <li>
+        John Doe<br>
+        <%= resume.created_at %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

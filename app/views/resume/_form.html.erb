@@ -1,0 +1,20 @@
+<%= form_for @resume do |f| %>
+  <p>
+    <%= f.label :summary %>
+    <%= f.text_area :summary %>
+  </p>
+  <p>
+    <%= f.label :employment_history %>
+    <%= f.text_area :employment_history %>
+  </p>
+  <p>
+    <%= f.label :education %>
+    <%= f.text_area :education %>
+  </p>
+  <p>
+    <%= f.label :interests %>
+    <%= f.text_area :interests %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
