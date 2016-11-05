@@ -13,5 +13,6 @@
 #
 
 class Resume < ActiveRecord::Base
-  belongs_to :seeker
+  # belongs_to :seeker
+  belongs_to :user
 end

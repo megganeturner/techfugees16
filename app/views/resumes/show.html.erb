@@ -1,2 +1,38 @@
-<h1>Resume#show</h1>
-<p>Find me in app/views/resume/show.html.erb</p>
+<h1>Your Resume</h1>
+<div id="resume-tips">
+  <h3>That's it!</h3>
+  <p>
+    Your resume has been sent off and will be reviewed by your very own career coach soon. They'll be in touch with feedback and next-steps shortly!
+    <br><br>
+    Made a mistake? Don't stress. You can edit it any time, or start over by deleting this resume and create a new one from scratch.
+  </p>
+  <h3>Skill Up in the Meantime!</h3>
+  <ul class="skill-up">
+    <li>CodeCademy</li>
+    <li>DuoLingo</li>
+    <li>Udacity</li>
+  </ul>
+  <div class="controllers">
+    <%= link_to 'Edit Resume', edit_resume_path %>
+    <%= link_to 'Delete Resume', @resume, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+  </div>
+</div>
+
+<div id="resume-show">
+  <h1>Resume</h1>
+
+  <h2>Summary</h2>
+  <%= @resume.summary %>
+  <hr>
+
+  <h2>Employment History</h2>
+  <%= @resume.employment_history %>
+  <hr>
+
+  <h2>Education</h2>
+  <%= @resume.education %>
+  <hr>
+
+  <h2>Interests</h2>
+  <%= @resume.interests %>
+</div>
