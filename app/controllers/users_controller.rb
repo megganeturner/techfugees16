@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
   def new
-    @seeker = Seeker.new
+    @user = User.new
   end
 
   def create
-    @seeker = Seeker.new seeker_params
-    if @seeker.save
+    @user = User.new user_params
+    if @user.save
       redirect_to root_path
     else
       render :new
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   private
-  def seeker_params
-    params.require(:seeker).permit(first_name, :last_name, :email, :password, :password_confirmation, :industry)
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :industry)
   end
 end
