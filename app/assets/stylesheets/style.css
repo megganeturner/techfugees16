@@ -62,7 +62,7 @@ p {
   padding: 10px;
   border: 1px solid #B2B2B2;
   border-radius: 20px;
-  margin-top: 40px;
+  margin: 40px auto;
   text-align: center;
   font-size: 14px;
 }
@@ -94,6 +94,7 @@ input {
 }
 #resume-show {
   width: 70vw;
+  min-height: 93vh;
   display: inline-block;
   background-color: #E9E3FF;
   position: absolute;

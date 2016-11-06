@@ -3,6 +3,8 @@
 
 ##### Meggan Turner, Jack Lo Russo, Sarah Marial, Melanie Thomas, Joumana Domat
 
+[Live Site](https://techfugees16-covered.herokuapp.com/)
+
 ### Overview
 
 Covered is a platform designed to connect newly arrived Australians to career mentors. Job seeking individuals can sign up, fill out some information and have a resume generated at the click of a button. They will be put in touch with an industry professional who will reach out and provide feedback on their resume. The seeker then has the opportunity to set up a 'mock interview' and discuss other aspects of the job application process with their mentor.
