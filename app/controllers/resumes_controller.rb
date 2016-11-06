@@ -13,7 +13,7 @@ class ResumesController < ApplicationController
 
   def create
     resume = Resume.create resume_params
-    redirect_to resumes_path
+    redirect_to resume
   end
 
   def edit

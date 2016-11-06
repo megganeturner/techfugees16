@@ -1,6 +1,11 @@
-<h1>Covered</h1>
+<%= image_tag('covered_logo_white.png', class: 'homepage-logo') %>
 
-<h2>Connecting new Australians with career mentors</h2>
+<h1>Connecting new Australians with career mentors</h1>
 
-
-<%= link_to 'Create Your Resume Now', new_resume_path %>
+<div class="homepage-controllers">
+  <% if logged_in? %>
+    <%= link_to 'Create Your Resume Now', new_resume_path, :class => 'button' %>
+  <% else %>
+    <%= link_to 'Sign In', login_path, :class => 'button' %> or <%= link_to 'Sign Up', new_user_path, :class => 'button' %> to get started.
+  <% end %>
+</div>
