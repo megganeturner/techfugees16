@@ -3,7 +3,7 @@
 html {
   box-sizing: border-box;
   background-color: #0AF;
-  font-family: 'Lato', sans-serif;
+  font-family: helvetica;
   font-weight: 100;
   color: #787878;
 
@@ -39,11 +39,13 @@ h2,
 h3 {
   color: #C3E3FF;
   text-align: center;
+  font-weight: 100;
 }
 h4 {
   color: #B2B2B2;
   padding: 10px;
   font-size: 20px;
+  font-weight: 100;
 }
 p {
   padding: 15px;
@@ -92,7 +94,6 @@ input {
 }
 #resume-show {
   width: 70vw;
-  height: 100vh;
   display: inline-block;
   background-color: #E9E3FF;
   position: absolute;
