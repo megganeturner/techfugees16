@@ -15,7 +15,7 @@ The prototype was tested with refugees & newly arrived Australians and was ident
 
 
 ### Specs & Version
-This is version 1.0.0
+This is version 1.0.0, and was built as a proof of concept.
 
 The app is built in Ruby on Rails
 
