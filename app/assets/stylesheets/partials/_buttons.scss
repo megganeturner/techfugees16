@@ -1,0 +1,146 @@
+/* Button Styles (starting point - needs refinement. Colours not final, just selected from https://flatuicolors.com/) */
+
+// Button colors
+$color-button-text: #fff;
+$color-button: #95A5A6;
+$color-button-cta: #1ABC9C;
+$color-button-danger: #e74c3c;
+$color-button-disabled: #dddddd;
+
+// Standard button
+.button {
+    border-radius: 4px;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: all 0.2s ease 0s;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0.42219rem 1rem;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    color: $color-button-text;
+    background-color: $color-button;
+
+    &:hover {
+        background-color: darken($color-button, 5%);
+    }
+
+    &:focus {
+        // browser default
+    }
+
+    &:active {
+        background-color: darken($color-button, 10%);
+    }
+}
+
+// Call to action (green)
+.button-cta {
+    background-color: $color-button-cta;
+
+    &:hover {
+        background-color: darken($color-button-cta, 5%);
+    }
+
+    &:focus {
+        // browser default
+    }
+
+    &:active {
+        background-color: darken($color-button-cta, 10%);
+    }
+}
+
+// Danger (red)
+.button-danger {
+    background-color: $color-button-danger;
+
+    &:hover {
+        background-color: darken($color-button-danger, 5%);
+    }
+
+    &:focus {
+        // browser default
+    }
+
+    &:active {
+        background-color: darken($color-button-danger, 10%);
+    }
+}
+
+// Disabled
+.button-disabled {
+    background-color: $color-button-disabled;
+    border-width: 0;
+    color: $color-button-text;
+    cursor: not-allowed;
+
+    &:hover {
+        color: $color-button-text;
+        background-color: $color-button-disabled;
+    }
+}
+
+input.button-disabled {
+    cursor: not-allowed;
+}
+
+
+// <a> buttons
+a.button {
+    text-decoration: none;
+    background-color: $color-button;
+
+    &:hover {
+        color: $color-button-text;
+        background-color: darken($color-button, 5%);
+    }
+
+    &:focus {
+        color: $color-button-text;
+    }
+
+    &:active {
+        background-color: darken($color-button, 10%);
+    }
+}
+
+a.button-cta {
+    background-color: $color-button-cta;
+
+    &:hover {
+        background-color: $color-button-cta;
+        background-color: darken($color-button-cta, 5%);
+    }
+
+    &:active {
+        background-color: darken($color-button-cta, 10%);
+    }
+}
+
+a.button-danger {
+    background-color: $color-button-danger;
+    border-color: $color-button-danger;
+
+    &:hover {
+        background-color: darken($color-button-danger, 5%);
+    }
+
+    &:active {
+        background-color: $color-button-danger, 10%;
+    }
+}
+
+a.button-disabled {
+    background-color: $color-button-disabled;
+    border-width: 0;
+    color: $color-button-text;
+    cursor: not-allowed;
+
+    &:hover {
+        color: $color-button-text;
+        background-color: $color-button-disabled;
+    }
+}

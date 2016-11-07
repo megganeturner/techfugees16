@@ -17,8 +17,8 @@
   </ul> -->
   <div class="controllers">
     <%= link_to 'Edit Resume', edit_resume_path, :class => 'button' %>
-    <%= link_to 'Delete Resume', @resume, :method => 'delete', :data => {:confirm => 'Are you sure?'}, :class => 'button' %>
-    <a href="#" class='button'>Download PDF</a>
+    <%= link_to 'Delete Resume', @resume, :method => 'delete', :data => {:confirm => 'Are you sure?'}, :class => 'button button-danger' %>
+    <a href="#" class='button button-cta'>Download PDF</a>
   </div>
 </div>
 
