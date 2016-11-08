@@ -1,11 +1,18 @@
-<%= image_tag('covered_logo_white.png', class: 'homepage-logo') %>
+<div class="homepage-container">
 
-<h1>Connecting new Australians with career mentors</h1>
+  <%= image_tag('covered_logo.png', class: 'homepage-logo') %>
 
-<div class="homepage-controllers">
-  <% if logged_in? %>
-    <%= link_to 'Create Your Resume Now', new_resume_path, :class => 'button button-cta' %>
-  <% else %>
-    <%= link_to 'Sign In', login_path, :class => 'button' %> or <%= link_to 'Sign Up', new_user_path, :class => 'button button-cta' %> to get started.
-  <% end %>
+
+  <div class="homepage-tagline">
+    <h1>Connecting new Australians with career mentors</h1>
+
+    <div class="homepage-controllers">
+      <% if logged_in? %>
+        <%= link_to 'Create Your Resume Now', new_resume_path, :class => 'button button-cta' %>
+      <% else %>
+        <%= link_to 'Sign In', login_path, :class => 'button' %> or <%= link_to 'Sign Up', new_user_path, :class => 'button button-cta' %> to get started.
+      <% end %>
+    </div>
+  </div>
+
 </div>

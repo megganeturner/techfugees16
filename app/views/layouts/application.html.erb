@@ -8,10 +8,14 @@
 </head>
 <body>
   <nav>
-    <%= link_to 'Home', root_path %>
+    <div class="nav-controllers">
+      <%= link_to (image_tag('covered_logo_only_white.png')), root_path, class: 'application-nav-logo' %>
+      <%= link_to 'About', about_path %>
+    </div>
+
     <div class="login-controllers">
       <% if logged_in? %>
-        <%= link_to 'Log Out', logout_path, method: 'delete' %>
+        <%= link_to "Log Out #{@current_user.first_name}", logout_path, method: 'delete' %>
       <% else %>
         <%= link_to 'Sign In', login_path %>
         <%= link_to 'Sign Up', new_user_path %>
@@ -19,7 +23,10 @@
     </div>
   </nav>
 
-<%= yield %>
+
+
+  <%= yield %>
+
 
 
 </body>
